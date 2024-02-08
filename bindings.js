@@ -34,6 +34,7 @@ var fs = require('fs'),
     version: process.versions.node,
     bindings: 'bindings.node',
     try: [
+      ['module_root', 'bin', 'win32-x64-119'],
       // node-gyp's linked version in the "build" dir
       ['module_root', 'build', 'bindings'],
       // node-waf and gyp_addon (a.k.a node-gyp)
